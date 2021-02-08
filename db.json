@@ -1,77 +1,79 @@
 {
-    "type": "object",
-    "properties": {
-        "blocks": {
-            "type": "object",
-            "properties": {
-                "block_key_checkbox": {
-                    "$ref": "#/definitions/element-select",
-                    "options": {
-                        "label": "Delivery method",
-                        "placeholder": "Select method",
-                        "message": "Please, specify how the delivery will be done",
-                        "isRequired": true,
-                        "items": [
-                            {
-                                "label": "Standard",
-                                "value": "1"
-                            },
-                            {
-                                "label": "Accelerated",
-                                "value": "2"
-                            }
-                        ]
-                    }
-                },
-                "block_key_new_input": {
-                    "$ref": "#/definitions/element-input",
-                    "options": {
-                        "type": "text",
-                        "placeholder": "Test",
-                        "label": "new Standard",
-                        "value": "S",
-                        "allowClear": true,
-                        "isRequired": true,
-                        "visibleOn": {
-                            "block_key_checkbox": {
-                                "equals": "1"
+    "test": {
+        "type": "object",
+        "properties": {
+            "blocks": {
+                "type": "object",
+                "properties": {
+                    "block_key_checkbox": {
+                        "$ref": "#/definitions/element-select",
+                        "options": {
+                            "label": "Delivery method",
+                            "placeholder": "Select method",
+                            "message": "Please, specify how the delivery will be done",
+                            "isRequired": true,
+                            "items": [
+                                {
+                                    "label": "Standard",
+                                    "value": "1"
+                                },
+                                {
+                                    "label": "Accelerated",
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    },
+                    "block_key_new_input": {
+                        "$ref": "#/definitions/element-input",
+                        "options": {
+                            "type": "text",
+                            "placeholder": "Test",
+                            "label": "new Standard",
+                            "value": "S",
+                            "allowClear": true,
+                            "isRequired": true,
+                            "visibleOn": {
+                                "block_key_checkbox": {
+                                    "equals": "1"
+                                }
                             }
                         }
-                    }
-                },
-                "block_key_new_input_2": {
-                    "$ref": "#/definitions/element-input",
-                    "options": {
-                        "type": "text",
-                        "placeholder": "Test",
-                        "label": "new Accelerated",
-                        "value": "A",
-                        "allowClear": true,
-                        "isRequired": true,
-                        "visibleOn": {
-                            "block_key_checkbox": {
-                                "equals": "2"
+                    },
+                    "block_key_new_input_2": {
+                        "$ref": "#/definitions/element-input",
+                        "options": {
+                            "type": "text",
+                            "placeholder": "Test",
+                            "label": "new Accelerated",
+                            "value": "A",
+                            "allowClear": true,
+                            "isRequired": true,
+                            "visibleOn": {
+                                "block_key_checkbox": {
+                                    "equals": "2"
+                                }
                             }
                         }
                     }
                 }
-            }
-        },
-        "actions": {
-            "type": "object",
-            "properties": {
-                "cancel_action": {
-                    "$ref": "#/definitions/action-secondary",
-                    "options": {
-                        "label": "Cancel",
-                        "handler": "cancel"
-                    }
-                },
-                "submit_action": {
-                    "$ref": "#/definitions/action-primary",
-                    "options": {
-                        "label": "Save",
-                        "handler": "request"
+            },
+            "actions": {
+                "type": "object",
+                "properties": {
+                    "cancel_action": {
+                        "$ref": "#/definitions/action-secondary",
+                        "options": {
+                            "label": "Cancel",
+                            "handler": "cancel"
+                        }
+                    },
+                    "submit_action": {
+                        "$ref": "#/definitions/action-primary",
+                        "options": {
+                            "label": "Save",
+                            "handler": "request"
+                        }
                     }
                 }
             }
