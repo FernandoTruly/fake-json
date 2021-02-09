@@ -14,13 +14,7 @@
                 ]
             },
             "block_key_name": {
-                "$ref": "#/definitions/element-input",
-                "options": {
-                    "type": "text",
-                    "value": "foi",
-                    "label": "Nome do template",
-                    "placeholder": "Informe o nome do template."
-                }
+                "value": "foi"
             }
         },
         "actions": {}
