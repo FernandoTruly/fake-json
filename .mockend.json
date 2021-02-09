@@ -1,6 +1,7 @@
 {
-  "User": {
+  "user": {
     "name": "pedro",
-    "idade": 24
+    "age": 24,
+    "telphone": "123456"
   }
 }
