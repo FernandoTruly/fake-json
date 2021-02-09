@@ -1,0 +1,21 @@
+{
+    "data":{
+        "blocks":{
+            "block_key_select":{
+                "items":[
+                    {
+                        "label":"Standard",
+                        "value":1
+                    },
+                    {
+                        "label":"Test",
+                        "value":2
+                    }
+                ]
+            }
+        },
+        "actions":{
+            
+        }
+    }
+}
