@@ -12,11 +12,6 @@
                         "value": 2
                     }
                 ]
-            },
-            "block_key_name": {
-                "options": {
-                    "value": "foi"
-                }
             }
         },
         "actions": {}
