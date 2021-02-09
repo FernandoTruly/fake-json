@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "blocks": {
+            "type": "object",
+            "properties": {
+                "block_key_datepicker": {
+                    "$ref": "#/definitions/element-datepicker",
+                    "options": {
+                        "label": "Delivery date",
+                        "value": "2021-03-17",
+                        "message": "Cakes will be ready by 12:00 on selected date",
+                        "placeholder": "Date",
+                        "allowClear": true,
+                        "isRequired": true,
+                        "fetchOnChange": true
+                    }
+                },
+                "block_key_select": {
+                    "$ref": "#/definitions/element-select",
+                    "options": {
+                        "label": "Delivery method",
+                        "message": "Please, specify how the delivery will be done.",
+                        "placeholder": "Select method",
+                        "isRequired": true
+                    }
+                }
+            }
+        },
+        "actions": {
+            "type": "object",
+            "properties": {
+                "cancel_action": {
+                    "$ref": "#/definitions/action-secondary",
+                    "options": {
+                        "label": "Cancel",
+                        "handler": "cancel"
+                    }
+                }
+            }
+        }
+    }
+}
